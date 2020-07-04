@@ -1,5 +1,15 @@
+  let style = document.createElement('style');
+  style.innerHTML = `
+  body {
+    display: block !important;
+  }
+
+  [role="heading"] + div > div:nth-child(2) {
+    display: none;
+  }
+  `;
+  document.head.appendChild(style);
+
 setTimeout(function () {
-  document.body.style.display = '';
   document.querySelector('[aria-label="오늘"]').click();
-  // document.querySelector('[role="heading"] + div').style.display = 'none';
-}, 500);
+}, 1000);
