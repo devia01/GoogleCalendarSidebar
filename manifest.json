@@ -1,7 +1,7 @@
 {
     "name": "Google Calendar in Sidebar",
     "description": "Google Calendar를 사이드바에서 사용해보세요!",
-    "version": "1.1",
+    "version": "1.1.1",
     "manifest_version": 2,
     "icons": {
         "128": "img/icon.png"
@@ -20,7 +20,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://calendar.google.com/calendar/companion"
+                "https://calendar.google.com/calendar/u/0/companion"
             ],
             "run_at": "document_end",
             "all_frames": true,

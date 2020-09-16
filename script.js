@@ -1,5 +1,5 @@
-  let style = document.createElement('style');
-  style.innerHTML = `
+let style = document.createElement("style");
+style.innerHTML = `
   body {
     display: block !important;
   }
@@ -8,7 +8,7 @@
     display: none;
   }
   `;
-  document.head.appendChild(style);
+document.head.appendChild(style);
 
 setTimeout(function () {
   document.querySelector('[aria-label="오늘"]').click();
